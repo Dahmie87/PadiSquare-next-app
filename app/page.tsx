@@ -2,100 +2,165 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+      <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+      <div className="flex items-center p-4 justify-between gap-3">
+<div className="flex shrink-0 items-center">
+<div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-gray-100 dark:border-gray-700" data-alt="Modern organic store minimalist leaf logo"
+></div>
+</div>
+<div className="flex-1">
+<h1 className="text-[#0e1b13] dark:text-white text-base font-bold leading-tight tracking-tight">GreenLeaf Organics</h1>
+<p className="text-xs text-primary font-medium">Verified Vendor</p>
+</div>
+<div className="flex items-center gap-2">
+<button className="p-2 text-slate-600 dark:text-slate-300">
+<span className="material-symbols-outlined">notifications</span>
+</button>
+<button className="p-2 text-slate-600 dark:text-slate-300">
+<span className="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+{/* <!-- Search Bar in Header --> */}
+<div className="px-4 pb-3">
+<label className="flex flex-col w-full">
+<div className="flex w-full items-stretch rounded-lg h-10 bg-gray-100 dark:bg-gray-800">
+<div className="text-primary flex items-center justify-center pl-3">
+<span className="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input className="form-input flex w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-gray-500 px-3" placeholder="Search in GreenLeaf Organics" value=""/>
+</div>
+</label>
+</div>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+<main className="pb-12">
+{/* <!-- Hero Banner --> */}
+<div className="@container">
+<div className="p-0">
+<div className="bg-cover bg-center flex flex-col justify-end overflow-hidden min-h-[340px] relative" data-alt="Lush green organic farm landscape hero image" >
+<div className="p-6 space-y-3">
+<span className="inline-block px-2 py-1 rounded bg-primary text-[10px] font-bold text-white uppercase tracking-widest">Limited Offer</span>
+<h2 className="text-white text-3xl font-bold leading-tight">Fresh Summer <br/>Harvest 2024</h2>
+<p className="text-white/80 text-sm max-w-[280px]">Experience the pure taste of nature with our newly arrived organic seasonal produce.</p>
+<div className="pt-2">
+<button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20">
+<span>Shop Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+{/* <!-- Control Bar --> */}
+<div className="flex items-center gap-4 bg-white dark:bg-gray-900 px-4 py-3 border-b border-gray-100 dark:border-gray-800 sticky top-[109px] z-40">
+<p className="text-slate-500 dark:text-slate-400 text-sm font-medium flex-1">124 Products</p>
+<div className="shrink-0">
+<button className="flex items-center gap-1 cursor-pointer rounded-lg h-9 px-3 bg-gray-100 dark:bg-gray-800 text-slate-700 dark:text-slate-200 text-xs font-semibold">
+<span className="material-symbols-outlined text-[18px]">swap_vert</span>
+<span>Newest First</span>
+</button>
+</div>
+<button className="flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg size-9">
+<span className="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+{/* <!-- Product Grid --> */}
+<div className="grid grid-cols-2 gap-3 p-4">
+{/* <!-- Product Card 1 --> */}
+<div className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
+<div className="relative aspect-square">
+<div className="w-full h-full bg-cover bg-center" data-alt="Fresh organic avocados on a wooden surface" ></div>
+<div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary text-[10px] font-bold text-white uppercase tracking-wider">New</div>
+<button className="absolute top-2 right-2 size-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-800">
+<span className="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div className="p-3">
+<p className="text-[11px] text-primary font-bold uppercase tracking-tighter">Fruits</p>
+<h3 className="text-sm font-semibold text-slate-800 dark:text-white line-clamp-1">Organic Hass Avocados</h3>
+<div className="mt-2 flex items-center justify-between">
+<span className="text-base font-bold text-slate-900 dark:text-white">$12.50</span>
+<button className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span className="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+{/* <!-- Product Card 2 --> */}
+<div className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
+<div className="relative aspect-square">
+<div className="w-full h-full bg-cover bg-center" data-alt="Collection of colorful organic heirloom tomatoes" ></div>
+<div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary text-[10px] font-bold text-white uppercase tracking-wider">New</div>
+<button className="absolute top-2 right-2 size-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-800">
+<span className="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div className="p-3">
+<p className="text-[11px] text-primary font-bold uppercase tracking-tighter">Vegetables</p>
+<h3 className="text-sm font-semibold text-slate-800 dark:text-white line-clamp-1">Heirloom Tomato Mix</h3>
+<div className="mt-2 flex items-center justify-between">
+<span className="text-base font-bold text-slate-900 dark:text-white">$8.90</span>
+<button className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span className="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+{/* <!-- Product Card 3 --> */}
+<div className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
+<div className="relative aspect-square">
+<div className="w-full h-full bg-cover bg-center" data-alt="Glass jar of pure organic wild forest honey" ></div>
+<button className="absolute top-2 right-2 size-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-800">
+<span className="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div className="p-3">
+<p className="text-[11px] text-primary font-bold uppercase tracking-tighter">Pantry</p>
+<h3 className="text-sm font-semibold text-slate-800 dark:text-white line-clamp-1">Wild Forest Honey</h3>
+<div className="mt-2 flex items-center justify-between">
+<span className="text-base font-bold text-slate-900 dark:text-white">$15.00</span>
+<button className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span className="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+{/* <!-- Product Card 4 --> */}
+<div className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
+<div className="relative aspect-square">
+<div className="w-full h-full bg-cover bg-center" data-alt="Bunch of organic kale leaves with water droplets" ></div>
+<button className="absolute top-2 right-2 size-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-800">
+<span className="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div className="p-3">
+<p className="text-[11px] text-primary font-bold uppercase tracking-tighter">Greens</p>
+<h3 className="text-sm font-semibold text-slate-800 dark:text-white line-clamp-1">Fresh Curly Kale</h3>
+<div className="mt-2 flex items-center justify-between">
+<span className="text-base font-bold text-slate-900 dark:text-white">$4.25</span>
+<button className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span className="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+{/* <!-- Pagination --> */}
+<div className="flex items-center justify-center gap-2 mt-6 px-4">
+<button className="size-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-600 dark:text-slate-300">
+<span className="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button className="size-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button className="size-10 flex items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-slate-600 dark:text-slate-300">2</button>
+<button className="size-10 flex items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-slate-600 dark:text-slate-300">3</button>
+<button className="size-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-600 dark:text-slate-300">
+<span className="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</main>
+
     </div>
   );
 }
