@@ -1,4 +1,4 @@
-'use client'
+
 export default function Home() {
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
@@ -28,7 +28,7 @@ export default function Home() {
 <div className="text-primary flex items-center justify-center pl-3">
 <span className="material-symbols-outlined text-[20px]">search</span>
 </div>
-<input className="form-input flex w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-gray-500 px-3" placeholder="Search in GreenLeaf Organics" value=""/>
+<input className="form-input flex w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-gray-500 px-3" placeholder="Search in GreenLeaf Organics"/>
 </div>
 </label>
 </div>
@@ -160,16 +160,16 @@ export default function Home() {
 </div>
 </main>
 
-<button
+{/* <button
             className="fixed bottom-6 right-6 bg-black dark:bg-white text-white dark:text-black w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-90 z-50"
             onClick={() => {
               document.documentElement.classList.toggle("dark");
             }}
             
           >
-            {/* <Lightbulb /> */}
+            
             Night
-          </button>
+          </button> */}
     </div>
   );
 }
