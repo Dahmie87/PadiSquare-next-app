@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+'use client'
 export default function Home() {
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
@@ -161,6 +160,16 @@ export default function Home() {
 </div>
 </main>
 
+<button
+            className="fixed bottom-6 right-6 bg-black dark:bg-white text-white dark:text-black w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-90 z-50"
+            onClick={() => {
+              document.documentElement.classList.toggle("dark");
+            }}
+            
+          >
+            {/* <Lightbulb /> */}
+            Night
+          </button>
     </div>
   );
 }
