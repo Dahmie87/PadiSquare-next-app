@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display p-20">
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="flex items-center p-4 justify-between gap-3">
 <div className="flex shrink-0 items-center">
@@ -44,7 +44,7 @@ export default function Home() {
 <h2 className="text-white text-3xl font-bold leading-tight">Fresh Summer <br/>Harvest 2024</h2>
 <p className="text-white/80 text-sm max-w-[280px]">Experience the pure taste of nature with our newly arrived organic seasonal produce.</p>
 <div className="pt-2">
-<button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20">
+<button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold hover:px-16 transition-transform active:scale-95 shadow-lg shadow-primary/20">
 <span>Shop Now</span>
 </button>
 </div>
