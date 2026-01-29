@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display p-20">
+    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display md:p-20">
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="flex items-center p-4 justify-between gap-3">
 <div className="flex shrink-0 items-center">
@@ -66,11 +66,11 @@ export default function Home() {
 </button>
 </div>
 {/* <!-- Product Grid --> */}
-<div className="grid grid-cols-2 gap-3 p-4">
+<div className="grid grid-cols-2 gap-10 p-8">
 {/* <!-- Product Card 1 --> */}
 <div className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
 <div className="relative aspect-square">
-<div className="w-full h-full bg-cover bg-center" data-alt="Fresh organic avocados on a wooden surface" ></div>
+<div className="w-full h-10 bg-cover bg-center" data-alt="Fresh organic avocados on a wooden surface" ></div>
 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary text-[10px] font-bold text-white uppercase tracking-wider">New</div>
 <button className="absolute top-2 right-2 size-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-800">
 <span className="material-symbols-outlined text-[18px]">favorite</span>
