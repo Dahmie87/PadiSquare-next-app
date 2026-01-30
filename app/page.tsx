@@ -1,4 +1,5 @@
-import { ArrowDownAZ, ArrowDownUp, ArrowLeft, Bell, ChevronLeft, ChevronRightIcon, Facebook, Filter, FilterX, Instagram, ListOrdered, Mail, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
+import ThemeButton from "./components/ThemeButton";
+import { ArrowDownAZ, ArrowDownUp, ArrowLeft, Bell, ChevronLeft, ChevronRightIcon, Facebook, Filter, FilterX, Instagram, Lamp, Lightbulb, ListOrdered, Mail, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
 import ProductCard from "./components/ProductCard";
 
 export default function Home() {
@@ -15,9 +16,7 @@ export default function Home() {
 <p className="text-xs text-primary font-medium">Verified Vendor</p>
 </div>
 <div className="flex items-center gap-2">
-<button className="p-2 text-slate-600 dark:text-slate-300">
-<Bell/>
-</button>
+<ThemeButton/>
 <button className="p-2 text-slate-600 dark:text-slate-300">
 <ShoppingBag/>
 </button>
