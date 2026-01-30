@@ -1,10 +1,14 @@
 import { Heart, ShoppingCart } from "lucide-react";
+import avocado from "../assets/avocado.png"
 
 export default function ProductCard({}){
-    return(
+const PODUCT_IMG_DICT={
+
+}
+return(
 <div className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
 <div className="relative aspect-square md:aspect-auto">
-<div className="w-full md:h-full h-5 bg-cover bg-center" data-alt="Fresh organic avocados on a wooden surface" ></div>
+<img className="w-full md:h-full h-5 bg-cover bg-center" data-alt="Fresh organic avocados on a wooden surface"  src="../assets/avocado.png"/>
 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary text-[10px] font-bold text-white uppercase tracking-wider">New</div>
 <button className="absolute top-2 right-2 size-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-800">
 <Heart/>
