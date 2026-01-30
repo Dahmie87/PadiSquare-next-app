@@ -1,3 +1,5 @@
+import { ShoppingCart } from "lucide-react";
+
 export default function ProductCard({}){
     return(
 <div className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
@@ -14,7 +16,7 @@ export default function ProductCard({}){
 <div className="mt-2 flex items-center justify-between">
 <span className="text-base font-bold text-slate-900 dark:text-white">$12.50</span>
 <button className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
-<span className="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+<ShoppingCart/>
 </button>
 </div>
 </div>

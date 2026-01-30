@@ -1,4 +1,4 @@
-import { ArrowDownAZ, ArrowDownUp, Bell, Filter, FilterX, ListOrdered, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
+import { ArrowDownAZ, ArrowDownUp, ArrowLeft, Bell, ChevronLeft, ChevronRightIcon, Facebook, Filter, FilterX, Instagram, ListOrdered, Mail, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
 import ProductCard from "./components/ProductCard";
 
 export default function Home() {
@@ -73,17 +73,32 @@ export default function Home() {
 {/* <!-- Pagination --> */}
 <div className="flex items-center justify-center gap-2 mt-6 px-4">
 <button className="size-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-600 dark:text-slate-300">
-<span className="material-symbols-outlined text-[20px]">chevron_left</span>
+<ChevronLeft/>
 </button>
 <button className="size-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
 <button className="size-10 flex items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-slate-600 dark:text-slate-300">2</button>
 <button className="size-10 flex items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-slate-600 dark:text-slate-300">3</button>
 <button className="size-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-600 dark:text-slate-300">
-<span className="material-symbols-outlined text-[20px]">chevron_right</span>
+<ChevronRightIcon/>
 </button>
 </div>
 </main>
-
+<footer className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 p-8 text-center">
+<div className="flex justify-center gap-6 mb-6">
+<a className="text-slate-400 hover:text-primary" href="#">
+  <Instagram/></a>
+<a className="text-slate-400 hover:text-primary" href="#"><Facebook/></a>
+<a className="text-slate-400 hover:text-primary" href="#"><Mail/></a>
+</div>
+<div className="space-y-3">
+<div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
+<a href="#">Shipping Policy</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Contact Vendor</a>
+</div>
+<p className="text-[10px] text-slate-400 tracking-wide uppercase">© 2024 GreenLeaf Organics. Powered by Marketplace.</p>
+</div>
+</footer>
 {/* <button
             className="fixed bottom-6 right-6 bg-black dark:bg-white text-white dark:text-black w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-90 z-50"
             onClick={() => {
