@@ -6,7 +6,7 @@ export default function ProductDetailsPage(){
 {/* <!-- Top Navigation Bar --> */}
 <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
 <div className="flex items-center p-4 justify-between max-w-xl mx-auto">
-<Link className="flex items-center gap-4">
+<Link href={'/'} className="flex items-center gap-4">
 <ChevronLeft/>
 <h2 className="text-lg font-bold leading-tight tracking-tight">EcoStore Vendor</h2>
 </Link>
