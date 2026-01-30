@@ -1,3 +1,4 @@
+import { Bell, Search, ShoppingBag } from "lucide-react";
 import ProductCard from "./components/ProductCard";
 
 export default function Home() {
@@ -15,10 +16,10 @@ export default function Home() {
 </div>
 <div className="flex items-center gap-2">
 <button className="p-2 text-slate-600 dark:text-slate-300">
-<span className="material-symbols-outlined">notifications</span>
+<Bell/>
 </button>
 <button className="p-2 text-slate-600 dark:text-slate-300">
-<span className="material-symbols-outlined">shopping_bag</span>
+<ShoppingBag/>
 </button>
 </div>
 </div>
@@ -27,8 +28,7 @@ export default function Home() {
 <label className="flex flex-col w-full">
 <div className="flex w-full items-stretch rounded-lg h-10 bg-gray-100 dark:bg-gray-800">
 <div className="text-primary flex items-center justify-center pl-3">
-<span className="material-symbols-outlined text-[20px]">search</span>
-</div>
+<Search/></div>
 <input className="form-input flex w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-gray-500 px-3" placeholder="Search in GreenLeaf Organics"/>
 </div>
 </label>
