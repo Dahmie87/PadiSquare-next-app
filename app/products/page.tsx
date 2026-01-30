@@ -1,4 +1,4 @@
-import { ChevronLeft, ShoppingCart } from "lucide-react";
+import { ChevronLeft, Search, ShoppingBasket, ShoppingCart } from "lucide-react";
 
 export default function ProductDetailsPage(){
     return(<div className="bg-background-light dark:bg-background-dark font-display text-[#0e1b13] dark:text-white antialiased">
@@ -10,9 +10,9 @@ export default function ProductDetailsPage(){
 <h2 className="text-lg font-bold leading-tight tracking-tight">EcoStore Vendor</h2>
 </div>
 <div className="flex items-center gap-3">
-<span className="material-symbols-outlined cursor-pointer">search</span>
+<Search/>
 <div className="relative">
-<span className="material-symbols-outlined cursor-pointer">shopping_cart</span>
+<ShoppingBasket/>
 <span className="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">3</span>
 </div>
 </div>
