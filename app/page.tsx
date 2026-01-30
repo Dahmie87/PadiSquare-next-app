@@ -1,4 +1,4 @@
-import { Bell, Search, ShoppingBag } from "lucide-react";
+import { ArrowDownAZ, ArrowDownUp, Bell, ListOrdered, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
 import ProductCard from "./components/ProductCard";
 
 export default function Home() {
@@ -58,7 +58,7 @@ export default function Home() {
 <p className="text-slate-500 dark:text-slate-400 text-sm font-medium flex-1">124 Products</p>
 <div className="shrink-0">
 <button className="flex items-center gap-1 cursor-pointer rounded-lg h-9 px-3 bg-gray-100 dark:bg-gray-800 text-slate-700 dark:text-slate-200 text-xs font-semibold">
-<span className="material-symbols-outlined text-[18px]">swap_vert</span>
+<ArrowDownUp className="w-4"/>
 <span>Newest First</span>
 </button>
 </div>
