@@ -1,4 +1,4 @@
-import { ArrowDownAZ, ArrowDownUp, Bell, ListOrdered, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
+import { ArrowDownAZ, ArrowDownUp, Bell, Filter, FilterX, ListOrdered, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
 import ProductCard from "./components/ProductCard";
 
 export default function Home() {
@@ -63,7 +63,7 @@ export default function Home() {
 </button>
 </div>
 <button className="flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg size-9">
-<span className="material-symbols-outlined text-[20px]">tune</span>
+<Filter className="w-5"/>
 </button>
 </div>
 {/* <!-- Product Grid --> */}
