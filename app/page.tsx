@@ -96,7 +96,7 @@ export default function Home() {
 <a href="#">Privacy Policy</a>
 <a href="#">Contact Vendor</a>
 </div>
-<p className="text-[10px] text-slate-400 tracking-wide uppercase">© 2024 GreenLeaf Organics. Powered by Marketplace.</p>
+<p className="text-[10px] text-slate-400 tracking-wide uppercase">© 2024 Adenike's Veges. Powered by PadiSquare.</p>
 </div>
 </footer>
 {/* <button

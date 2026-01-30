@@ -1,4 +1,4 @@
-import { ShoppingCart } from "lucide-react";
+import { Heart, ShoppingCart } from "lucide-react";
 
 export default function ProductCard({}){
     return(
@@ -7,7 +7,7 @@ export default function ProductCard({}){
 <div className="w-full md:h-full h-5 bg-cover bg-center" data-alt="Fresh organic avocados on a wooden surface" ></div>
 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary text-[10px] font-bold text-white uppercase tracking-wider">New</div>
 <button className="absolute top-2 right-2 size-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-800">
-<span className="material-symbols-outlined text-[18px]">favorite</span>
+<Heart/>
 </button>
 </div>
 <div className="p-3">
