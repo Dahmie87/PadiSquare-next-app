@@ -1,14 +1,15 @@
-import { ChevronLeft, Search, ShoppingBasket, ShoppingCart } from "lucide-react";
+import Link from "next/link";
+import { ChevronDown, ChevronLeft, Expand, MoreVertical, Search, ShoppingBasket, ShoppingCart, Star } from "lucide-react";
 
 export default function ProductDetailsPage(){
     return(<div className="bg-background-light dark:bg-background-dark font-display text-[#0e1b13] dark:text-white antialiased">
 {/* <!-- Top Navigation Bar --> */}
 <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
 <div className="flex items-center p-4 justify-between max-w-xl mx-auto">
-<div className="flex items-center gap-4">
+<Link className="flex items-center gap-4">
 <ChevronLeft/>
 <h2 className="text-lg font-bold leading-tight tracking-tight">EcoStore Vendor</h2>
-</div>
+</Link>
 <div className="flex items-center gap-3">
 <Search/>
 <div className="relative">
@@ -55,7 +56,7 @@ export default function ProductDetailsPage(){
 <span className="text-gray-400 line-through text-sm">$110.00</span>
 </div>
 <div className="flex items-center gap-1">
-<span className="material-symbols-outlined text-yellow-400 filled-icon text-lg">star</span>
+<Star className="material-symbols-outlined text-yellow-400 filled-icon w-5"/>
 <span className="font-bold text-sm">4.8</span>
 <span className="text-gray-500 text-xs">(128 reviews)</span>
 </div>
@@ -91,11 +92,11 @@ export default function ProductDetailsPage(){
 <div className="px-4 mt-8 space-y-2">
 <div className="border-t border-gray-100 dark:border-gray-800 py-4 flex items-center justify-between cursor-pointer">
 <span className="font-bold">Product Details</span>
-<span className="material-symbols-outlined">expand_more</span>
+<ChevronDown/>
 </div>
 <div className="border-t border-gray-100 dark:border-gray-800 py-4 flex items-center justify-between cursor-pointer">
 <span className="font-bold">Shipping Info</span>
-<span className="material-symbols-outlined">expand_more</span>
+<ChevronDown/>
 </div>
 </div>
 {/* <!-- Related Products --> */}
