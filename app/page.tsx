@@ -11,7 +11,7 @@ export default function Home() {
 ></div>
 </div>
 <div className="flex-1">
-<h1 className="text-[#0e1b13] dark:text-white text-base font-bold leading-tight tracking-tight">GreenLeaf Organics</h1>
+<h1 className="text-[#0e1b13] dark:text-white text-base font-bold leading-tight tracking-tight">Adenike's Veges</h1>
 <p className="text-xs text-primary font-medium">Verified Vendor</p>
 </div>
 <div className="flex items-center gap-2">
@@ -29,7 +29,7 @@ export default function Home() {
 <div className="flex w-full items-stretch rounded-lg h-10 bg-gray-100 dark:bg-gray-800">
 <div className="text-primary flex items-center justify-center pl-3">
 <Search/></div>
-<input className="form-input flex w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-gray-500 px-3" placeholder="Search in GreenLeaf Organics"/>
+<input className="form-input flex w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-gray-500 px-3" placeholder="Search in Adenike's Veges"/>
 </div>
 </label>
 </div>
@@ -42,7 +42,7 @@ export default function Home() {
 <div className="bg-cover bg-center flex flex-col justify-end overflow-hidden min-h-[340px] relative" data-alt="Lush green organic farm landscape hero image" >
 <div className="p-6 space-y-3">
 <span className="inline-block px-2 py-1 rounded bg-primary text-[10px] font-bold text-white uppercase tracking-widest">Limited Offer</span>
-<h2 className="text-white text-3xl font-bold leading-tight">Fresh Summer <br/>Harvest 2024</h2>
+<h2 className="text-white text-3xl font-bold leading-tight">Fresh Nigerian <br/>Harvest 2026</h2>
 <p className="text-white/80 text-sm max-w-[280px]">Experience the pure taste of nature with our newly arrived organic seasonal produce.</p>
 <div className="pt-2">
 <button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold hover:px-16 transition-transform active:scale-95 shadow-lg shadow-primary/20">
