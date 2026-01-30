@@ -1,10 +1,12 @@
+import { ChevronLeft, ShoppingCart } from "lucide-react";
+
 export default function ProductDetailsPage(){
     return(<div className="bg-background-light dark:bg-background-dark font-display text-[#0e1b13] dark:text-white antialiased">
 {/* <!-- Top Navigation Bar --> */}
 <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
 <div className="flex items-center p-4 justify-between max-w-xl mx-auto">
 <div className="flex items-center gap-4">
-<span className="material-symbols-outlined cursor-pointer">arrow_back_ios</span>
+<ChevronLeft/>
 <h2 className="text-lg font-bold leading-tight tracking-tight">EcoStore Vendor</h2>
 </div>
 <div className="flex items-center gap-3">
@@ -131,7 +133,7 @@ export default function ProductDetailsPage(){
 <div className="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-t border-gray-200 dark:border-gray-800 p-4 z-50">
 <div className="max-w-xl mx-auto flex gap-3">
 <button className="flex-1 border-2 border-primary text-primary font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:bg-primary/5 transition-colors">
-<span className="material-symbols-outlined text-xl">add_shopping_cart</span>
+<ShoppingCart/>
                 Add to Cart
             </button>
 <button className="flex-[1.5] bg-primary text-white font-bold py-3.5 rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 transition-colors">
