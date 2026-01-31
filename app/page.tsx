@@ -1,4 +1,6 @@
 import ThemeButton from "./components/ThemeButton";
+import fruits from './assets/fruits.png'
+import Link from "next/link";
 import { ArrowDownAZ, ArrowDownUp, ArrowLeft, Bell, ChevronLeft, ChevronRightIcon, Facebook, Filter, FilterX, Instagram, Lamp, Lightbulb, ListOrdered, Mail, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
 import ProductCard from "./components/ProductCard";
 
@@ -67,7 +69,8 @@ export default function Home() {
 </div>
 {/* <!-- Product Grid --> */}
 <div className="grid grid-cols-2 gap-10 p-8">
-<ProductCard/>
+  <Link href={'/products'}><ProductCard/>
+</Link>
 </div>
 {/* <!-- Pagination --> */}
 <div className="flex items-center justify-center gap-2 mt-6 px-4">
@@ -97,6 +100,7 @@ export default function Home() {
 </div>
 <p className="text-[10px] text-slate-400 tracking-wide uppercase">© 2024 Adenike's Veges. Powered by PadiSquare.</p>
 </div>
+<img src="./assets/fruits.png"/>
 </footer>
 {/* <button
             className="fixed bottom-6 right-6 bg-black dark:bg-white text-white dark:text-black w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-90 z-50"
