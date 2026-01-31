@@ -5,10 +5,12 @@ import ProductCard from './ProductCard'
 import Link from 'next/link'
 import { ChevronLeft,ChevronRight } from 'lucide-react'
 function ProductGrid({products}:any) {
+
+const productsArr= Object.values(products)
   return (
     <div><div className="grid grid-cols-2 gap-10 p-8">
-  <Link href={'/products/1'}><ProductCard/>
-</Link>
+  {productsArr.map((product)=>(<Link href={'/products/1'}><ProductCard/>
+</Link>))}
 </div>
 {/* <!-- Pagination --> */}
 <div className="flex items-center justify-center gap-2 mt-6 px-4">
