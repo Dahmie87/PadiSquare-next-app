@@ -21,7 +21,7 @@ const PRODUCTS_PER_PAGE = 4
 
   return (
     <div><div className="grid grid-cols-2 gap-10 p-8">
-  {productsArr.map((product)=>(<Link href={'/products/1'}><ProductCard/>
+  {paginatedProducts.map((product)=>(<Link href={'/products/1'}><ProductCard prods={product}/>
 </Link>))}
 </div>
 {/* <!-- Pagination --> */}
