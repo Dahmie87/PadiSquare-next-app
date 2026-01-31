@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import ProductCard from './ProductCard'
 import Link from 'next/link'
