@@ -1,15 +1,12 @@
 import ThemeButton from "./components/ThemeButton";
 import ProductGrid from "./components/ProductGrid";
 import LogoCard from "./components/Logo";
+import { vendors } from "@/lib/data";
 import {  ArrowDownUp, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
 
 export default async function Home() {
-  const baseUrl = process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}` 
-    : 'http://localhost:3000';
-  
-  const res = await fetch(`${baseUrl}/api/vendors/1`, {"cache":"no-store"})
-   const vendor= await res.json()
+ 
+   const vendor= vendors[1]
    console.log(Object.keys(vendor.products).length)
 
 
