@@ -6,7 +6,8 @@ import ProductCard from "./components/ProductCard";
 
 export default async function Home() {
    const res= await fetch("http://127.0.0.1:8000/vendors/1")
-   console.log(res)
+   const vendor=await res.json()
+   console.log(vendor)
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display md:p-20">
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
@@ -16,7 +17,7 @@ export default async function Home() {
 ></div>
 </div>
 <div className="flex-1">
-<h1 className="text-[#0e1b13] dark:text-white text-base font-bold leading-tight tracking-tight">Adenike's Veges</h1>
+<h1 className="text-[#0e1b13] dark:text-white text-base font-bold leading-tight tracking-tight">{}</h1>
 <p className="text-xs text-primary font-medium">Verified Vendor</p>
 </div>
 <div className="flex items-center gap-2">
