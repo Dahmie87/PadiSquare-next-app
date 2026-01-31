@@ -5,7 +5,7 @@ import { ArrowDownAZ, ArrowDownUp, ArrowLeft, Bell, ChevronLeft, ChevronRightIco
 import ProductCard from "./components/ProductCard";
 
 export default async function Home() {
-   const res= await fetch("http://127.0.0.1:8000/vendors/1")
+   const res= await fetch("http://127.0.0.1:8000/vendors/1", {"cache":"no-store"})
    const vendor=await res.json()
    console.log(vendor)
   return (
