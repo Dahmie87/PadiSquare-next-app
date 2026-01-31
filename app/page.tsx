@@ -21,7 +21,7 @@ export default async function Home() {
 </div>
 <div className="flex items-center gap-2">
 <ThemeButton  />
-<button className="p-2 text-slate-600 dark:text-slate-300">
+<button title="shopping cartsd" className="p-2 text-slate-600 dark:text-slate-300">
 <ShoppingBag/>
 </button>
 </div>
