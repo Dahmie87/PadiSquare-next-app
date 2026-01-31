@@ -17,7 +17,7 @@ export default async function Home() {
 ></div>
 </div>
 <div className="flex-1">
-<h1 className="text-[#0e1b13] dark:text-white text-base font-bold leading-tight tracking-tight">{}</h1>
+<h1 className="text-[#0e1b13] dark:text-white text-base font-bold leading-tight tracking-tight">{vendor.name}</h1>
 <p className="text-xs text-primary font-medium">Verified Vendor</p>
 </div>
 <div className="flex items-center gap-2">
