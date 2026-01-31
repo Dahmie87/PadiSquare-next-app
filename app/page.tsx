@@ -52,7 +52,7 @@ export default async function Home() {
 <div className="bg-[url('/grassfield.png')] bg-cover bg-center flex flex-col justify-end overflow-hidden min-h-[340px] relative" data-alt="Lush green organic farm landscape hero image" >
 <div className="p-6 space-y-3">
 <span className="inline-block px-2 py-1 rounded bg-primary text-[10px] font-bold text-white uppercase tracking-widest">Limited Offer</span>
-<h2 className="text-white text-3xl font-bold leading-tight">Fresh Nigerian <br/>Harvest 2026</h2>
+<h2 className="text-white text-3xl font-bold leading-tight">{vendor.product_ad}</h2>
 <p className="text-white/80 text-sm max-w-[280px]">Experience the pure taste of nature with our newly arrived organic seasonal produce.</p>
 <div className="pt-2">
 <button className="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold hover:px-16 transition-transform active:scale-95 shadow-lg shadow-primary/20">
@@ -65,7 +65,7 @@ export default async function Home() {
 </div>
 {/* <!-- Control Bar --> */}
 <div className="flex items-center gap-4 bg-white dark:bg-gray-900 px-4 py-3 border-b border-gray-100 dark:border-gray-800 sticky top-[109px] z-40">
-<p className="text-slate-500 dark:text-slate-400 text-sm font-medium flex-1">{vendor.products.length}</p>
+<p className="text-slate-500 dark:text-slate-400 text-sm font-medium flex-1">{Object.keys(vendor.products).length} products</p>
 <div className="shrink-0">
 <button className="flex items-center gap-1 cursor-pointer rounded-lg h-9 px-3 bg-gray-100 dark:bg-gray-800 text-slate-700 dark:text-slate-200 text-xs font-semibold">
 <ArrowDownUp className="w-4"/>
