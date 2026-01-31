@@ -5,8 +5,11 @@ import { ChevronDown, ChevronLeft, Search, ShoppingBasket, ShoppingCart, Star } 
 export default async function ProductDetailsPage({params}:{params:{id:string}}){
     const product_id = parseInt(params.id)
 
-    const res = await fetch(`http://localhost:3000/api/vendors/1/`, {cache: "no-store"})
-    const vendor = await res.json()
+    const baseUrl = process.env.VERCEL_URL 
+    ? `https://${process.env.VERCEL_URL}` 
+    : 'http://localhost:3000';
+    
+  const vendor:any = await fetch(`${baseUrl}/api/vendors/1/`)
     const product = vendor.products[product_id]
 
     const PRODUCT_IMG_DICT: {[key:number]:string} = {
