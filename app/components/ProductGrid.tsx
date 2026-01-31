@@ -1,5 +1,6 @@
 'use client';
 import React from 'react'
+import { useState } from 'react';
 
 import ProductCard from './ProductCard'
 import Link from 'next/link'
@@ -7,6 +8,12 @@ import { ChevronLeft,ChevronRight } from 'lucide-react'
 function ProductGrid({products}:any) {
 
 const productsArr= Object.values(products)
+const PRODUCTS_PER_PAGE = 4
+  const [currentPage, setCurrentPage] = useState(1)
+
+  // Total pages
+  const totalPages = Math.ceil(productsArr.length / PRODUCTS_PER_PAGE)
+
   return (
     <div><div className="grid grid-cols-2 gap-10 p-8">
   {productsArr.map((product)=>(<Link href={'/products/1'}><ProductCard/>
