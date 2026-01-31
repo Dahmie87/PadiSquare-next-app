@@ -1,5 +1,6 @@
 'use client';
 import React from 'react'
+
 import ProductCard from './ProductCard'
 import Link from 'next/link'
 import { ChevronLeft,ChevronRight } from 'lucide-react'
