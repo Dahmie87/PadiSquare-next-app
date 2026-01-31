@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import QuantitySelector from "@/app/components/Quantity";
 import { ChevronDown, ChevronLeft, Search, ShoppingBasket, ShoppingCart, Star } from "lucide-react";
 
 export default async function ProductDetailsPage({params}:{params:{id:string}}){
@@ -91,7 +91,7 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
 </div>
 {/* <!-- Variant Selection --> */}
 <div className="px-4 pt-8">
-
+<QuantitySelector/>
 <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mt-8 mb-4">Select Size</h3>
 <div className="flex gap-3 flex-wrap">
 <button className="px-5 py-2 rounded-lg border border-gray-200 dark:border-gray-700 font-medium text-sm hover:border-primary transition-colors">S</button>
