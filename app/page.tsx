@@ -1,5 +1,5 @@
 import ThemeButton from "./components/ThemeButton";
-import fruits from './assets/fruits.png'
+import LogoCard from "./components/Logo";
 import Link from "next/link";
 import { ArrowDownAZ, ArrowDownUp, ArrowLeft, Bell, ChevronLeft, ChevronRightIcon, Facebook, Filter, FilterX, Instagram, Lamp, Lightbulb, ListOrdered, Mail, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
 import ProductCard from "./components/ProductCard";
@@ -13,8 +13,7 @@ export default async function Home() {
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="flex items-center p-4 justify-between gap-3">
 <div className="flex shrink-0 items-center">
-<div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-gray-100 dark:border-gray-700" data-alt="Modern organic store minimalist leaf logo"
-></div>
+<LogoCard name={vendor.name}/>
 </div>
 <div className="flex-1">
 <h1 className="text-[#0e1b13] dark:text-white text-base font-bold leading-tight tracking-tight">{vendor.name}</h1>
