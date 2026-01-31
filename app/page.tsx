@@ -4,7 +4,8 @@ import Link from "next/link";
 import { ArrowDownAZ, ArrowDownUp, ArrowLeft, Bell, ChevronLeft, ChevronRightIcon, Facebook, Filter, FilterX, Instagram, Lamp, Lightbulb, ListOrdered, Mail, Search, SendHorizontal, ShoppingBag, SortAsc, SortAscIcon } from "lucide-react";
 import ProductCard from "./components/ProductCard";
 
-export default function Home() {
+export default async function Home() {
+   const res= await fetch("http://127.0.0.1:8000/vendors/1")
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display md:p-20">
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
