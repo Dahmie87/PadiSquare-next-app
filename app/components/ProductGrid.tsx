@@ -14,6 +14,11 @@ const PRODUCTS_PER_PAGE = 4
   // Total pages
   const totalPages = Math.ceil(productsArr.length / PRODUCTS_PER_PAGE)
 
+   const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE
+  const endIndex = startIndex + PRODUCTS_PER_PAGE
+  const paginatedProducts = productsArr.slice(startIndex, endIndex)
+
+
   return (
     <div><div className="grid grid-cols-2 gap-10 p-8">
   {productsArr.map((product)=>(<Link href={'/products/1'}><ProductCard/>
