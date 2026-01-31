@@ -4,6 +4,8 @@ type Prods={
     image:number
     category:string
     name:string
+     price:string
+
 
 }
 
@@ -30,7 +32,7 @@ return(
 <p className="text-[11px] text-primary font-bold uppercase tracking-tighter">{prods.category}</p>
 <h3 className="text-sm font-semibold text-slate-800 dark:text-white line-clamp-1">{prods.name}</h3>
 <div className="mt-2 flex items-center justify-between">
-<span className="text-base font-bold text-slate-900 dark:text-white">$12.50</span>
+<span className="text-base font-bold text-slate-900 dark:text-white">{prods.price}</span>
 <button className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
 <ShoppingCart/>
 </button>
