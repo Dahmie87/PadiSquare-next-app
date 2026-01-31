@@ -10,6 +10,7 @@ type Prods={
     id: string | number
     image:number
     category:string
+    name:string
 }
 
 

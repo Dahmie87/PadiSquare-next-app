@@ -3,6 +3,7 @@ import { Heart, ShoppingCart } from "lucide-react";
 type Prods={
     image:number
     category:string
+    name:string
 
 }
 
@@ -12,6 +13,8 @@ const PRODUCT_IMG_DICT:{[key:number]:string} ={
     2:"fruits.png",
     3:"broccoli.png",
     4:"jar.png",
+    5:"/grapes.jpg",
+    6:"/unnamed.jpg"
 }
 console.log(prods)
 return(

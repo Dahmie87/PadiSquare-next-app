@@ -8,12 +8,12 @@ const vendors = {
     product_ad_details: "",
     is_verified: true,
     products: {
-      1: { name: "", price: "", description: "", category: "a", image: 1 },
-      2: { name: "", price: "", description: "", category: "b", image: 2 },
-      3: { name: "", price: "", description: "", category: "c", image: 3 },
-      4: { name: "", price: "", description: "", category: "d", image: 4 },
-      5: { name: "", price: "", description: "", category: "f", image: 5 },
-      6: { name: "", price: "", description: "", category: "e", image: 6 },
+      1: { name: "Fresh Avocados", price: "₦", description: "", category: "a", image: 1 },
+      2: { name: "Tomatoes Ripe and red", price: "₦", description: "", category: "b", image: 2 },
+      3: { name: "Broccoli", price: "₦", description: "", category: "c", image: 3 },
+      4: { name: "Original Honey", price: "₦", description: "", category: "d", image: 4 },
+      5: { name: "grapes", price: "₦", description: "", category: "f", image: 5 },
+      6: { name: "Spinach", price: "₦", description: "", category: "e", image: 6 },
     }
   }
 };
