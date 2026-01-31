@@ -72,7 +72,7 @@ export default async function Home() {
 </button>
 </div>
 {/* <!-- Product Grid --> */}
-<ProductGrid/>
+<ProductGrid products={vendor.products}/>
 </main>
 <footer className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 p-8 text-center">
 <div className="flex justify-center gap-6 mb-6">
