@@ -7,7 +7,7 @@ import { ChevronLeft,ChevronRight } from 'lucide-react'
 function ProductGrid() {
   return (
     <div><div className="grid grid-cols-2 gap-10 p-8">
-  <Link href={'/products'}><ProductCard/>
+  <Link href={'/products/1'}><ProductCard/>
 </Link>
 </div>
 {/* <!-- Pagination --> */}
