@@ -11,7 +11,7 @@ return(
 <img src="/avocado.png" className="w-full"/>
 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary text-[10px] font-bold text-white uppercase tracking-wider">New</div>
 <button className="absolute top-2 right-2 size-8 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-slate-800">
-<Heart/>
+<Heart className=""/>
 </button>
 </div>
 <div className="p-3">
