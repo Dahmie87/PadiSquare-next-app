@@ -42,7 +42,7 @@ export default async function Home() {
 {/* <!-- Hero Banner --> */}
 <div className="@container">
 <div className="p-0">
-<div className="bg-cover bg-center flex flex-col justify-end overflow-hidden min-h-[340px] relative" data-alt="Lush green organic farm landscape hero image" >
+<div className="bg-[url('/grassfield.png')] bg-cover bg-center flex flex-col justify-end overflow-hidden min-h-[340px] relative" data-alt="Lush green organic farm landscape hero image" >
 <div className="p-6 space-y-3">
 <span className="inline-block px-2 py-1 rounded bg-primary text-[10px] font-bold text-white uppercase tracking-widest">Limited Offer</span>
 <h2 className="text-white text-3xl font-bold leading-tight">Fresh Nigerian <br/>Harvest 2026</h2>
