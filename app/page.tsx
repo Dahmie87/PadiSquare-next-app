@@ -5,7 +5,7 @@ import {  ArrowDownUp, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag}
 
 export default async function Home() {
   const res = await fetch("http://localhost:3000/api/vendors/1", {"cache":"no-store"})
-   const vendor=await res.json()
+   const vendor= await res.json()
    console.log(Object.keys(vendor.products).length)
 
 
