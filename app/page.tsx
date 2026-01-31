@@ -4,7 +4,7 @@ import LogoCard from "./components/Logo";
 import {  ArrowDownUp, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
 
 export default async function Home() {
-   const res= await fetch("http://127.0.0.1:8000/vendors/1", {"cache":"no-store"})
+  const res = await fetch("http://localhost:3000/api/vendors/1", {"cache":"no-store"})
    const vendor=await res.json()
    console.log(Object.keys(vendor.products).length)
 
