@@ -8,12 +8,12 @@ const vendors = {
     product_ad_details: "",
     is_verified: true,
     products: {
-      1: { name: "Fresh Avocados", price: "₦", description: "", category: "a", image: 1 },
-      2: { name: "Tomatoes Ripe and red", price: "₦", description: "", category: "b", image: 2 },
-      3: { name: "Broccoli", price: "₦", description: "", category: "c", image: 3 },
-      4: { name: "Original Honey", price: "₦", description: "", category: "d", image: 4 },
-      5: { name: "grapes", price: "₦", description: "", category: "f", image: 5 },
-      6: { name: "Spinach", price: "₦", description: "", category: "e", image: 6 },
+      1: { name: "Fresh Avocados", price: "₦", description: "", category: "FRUITS", image: 1 },
+      2: { name: "Tomatoes Ripe and red", price: "₦", description: "", category: "VEGETABLES", image: 2 },
+      3: { name: "Broccoli 100% natural", price: "₦", description: "", category: "FRUITS VEGETABLES", image: 3 },
+      4: { name: "Original Honey from Healthy Bess", price: "₦", description: "", category: "DRINK", image: 4 },
+      5: { name: "Grapes for Fine Wine", price: "₦", description: "", category: "VEGETABLES", image: 5 },
+      6: { name: "Spinach for soup", price: "₦", description: "", category: "FRUITS", image: 6 },
     }
   }
 };
