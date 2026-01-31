@@ -6,7 +6,15 @@ import {  ArrowDownUp, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag}
 export default async function Home() {
    const res= await fetch("http://127.0.0.1:8000/vendors/1", {"cache":"no-store"})
    const vendor=await res.json()
-   console.log(vendor)
+   console.log(Object.keys(vendor.products).length)
+
+
+
+
+
+
+
+
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display md:p-20">
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
@@ -57,7 +65,7 @@ export default async function Home() {
 </div>
 {/* <!-- Control Bar --> */}
 <div className="flex items-center gap-4 bg-white dark:bg-gray-900 px-4 py-3 border-b border-gray-100 dark:border-gray-800 sticky top-[109px] z-40">
-<p className="text-slate-500 dark:text-slate-400 text-sm font-medium flex-1">124 Products</p>
+<p className="text-slate-500 dark:text-slate-400 text-sm font-medium flex-1">{vendor.products.length}</p>
 <div className="shrink-0">
 <button className="flex items-center gap-1 cursor-pointer rounded-lg h-9 px-3 bg-gray-100 dark:bg-gray-800 text-slate-700 dark:text-slate-200 text-xs font-semibold">
 <ArrowDownUp className="w-4"/>
