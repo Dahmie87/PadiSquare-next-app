@@ -13,6 +13,7 @@ export default async function Home() {
 
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display md:p-20">
+      <img className="w-10" src="/logolight.png"/>
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="flex items-center p-4 justify-between gap-3">
 <div className="flex shrink-0 items-center">
