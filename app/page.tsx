@@ -1,7 +1,7 @@
 import ThemeButton from "./components/ThemeButton";
 import LogoCard from "./components/Logo";
 import Link from "next/link";
-import { ArrowDownAZ, ArrowDownUp, ChevronLeft, ChevronRightIcon, Facebook, Filter,  Instagram,  Lightbulb,  Mail, Search, ShoppingBag} from "lucide-react";
+import {  ArrowDownUp, ChevronLeft, ChevronRightIcon, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
 import ProductCard from "./components/ProductCard";
 
 export default async function Home() {
