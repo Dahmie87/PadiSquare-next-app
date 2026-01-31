@@ -1,5 +1,4 @@
 import { Heart, ShoppingCart } from "lucide-react";
-import avocado from "../assets/avocado.png"
 
 export default function ProductCard({}){
 const PODUCT_IMG_DICT={
