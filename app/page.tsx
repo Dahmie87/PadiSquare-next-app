@@ -1,4 +1,5 @@
 import ThemeButton from "./components/ThemeButton";
+import ProductGrid from "./components/ProductGrid";
 import LogoCard from "./components/Logo";
 import {  ArrowDownUp, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
 
@@ -68,7 +69,7 @@ export default async function Home() {
 </button>
 </div>
 {/* <!-- Product Grid --> */}
-
+<ProductGrid/>
 </main>
 <footer className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 p-8 text-center">
 <div className="flex justify-center gap-6 mb-6">
