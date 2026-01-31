@@ -102,16 +102,7 @@ export default function Home() {
 </div>
 
 </footer>
-{/* <button
-            className="fixed bottom-6 right-6 bg-black dark:bg-white text-white dark:text-black w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-90 z-50"
-            onClick={() => {
-              document.documentElement.classList.toggle("dark");
-            }}
-            
-          >
-            
-            Night
-          </button> */}
+
     </div>
   );
 }
