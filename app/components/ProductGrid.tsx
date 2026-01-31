@@ -41,12 +41,26 @@ const PRODUCTS_PER_PAGE = 4
         >
           <ChevronLeft />
         </button>
-<button className="size-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
-<button className="size-10 flex items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-slate-600 dark:text-slate-300">2</button>
-<button className="size-10 flex items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-slate-600 dark:text-slate-300">3</button>
-<button className="size-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-600 dark:text-slate-300">
-<ChevronRight/>
-</button>
+{Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+          <button
+            key={page}
+            onClick={() => setCurrentPage(page)}
+            className={`size-10 flex items-center justify-center rounded-lg font-bold
+              ${currentPage === page
+                ? 'bg-primary text-white'
+                : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700'
+              }`}
+          >
+            {page}
+          </button>
+        ))}
+        <button
+          disabled={currentPage === totalPages}
+          onClick={() => setCurrentPage(prev => prev + 1)}
+          className="size-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 disabled:opacity-40"
+        >
+          <ChevronRight />
+        </button>
 </div></div>
   )
 }
