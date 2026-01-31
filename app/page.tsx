@@ -1,8 +1,6 @@
 import ThemeButton from "./components/ThemeButton";
 import LogoCard from "./components/Logo";
-import Link from "next/link";
-import {  ArrowDownUp, ChevronLeft, ChevronRightIcon, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
-import ProductCard from "./components/ProductCard";
+import {  ArrowDownUp, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
 
 export default async function Home() {
    const res= await fetch("http://127.0.0.1:8000/vendors/1", {"cache":"no-store"})
@@ -70,22 +68,7 @@ export default async function Home() {
 </button>
 </div>
 {/* <!-- Product Grid --> */}
-<div className="grid grid-cols-2 gap-10 p-8">
-  <Link href={'/products'}><ProductCard/>
-</Link>
-</div>
-{/* <!-- Pagination --> */}
-<div className="flex items-center justify-center gap-2 mt-6 px-4">
-<button className="size-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-600 dark:text-slate-300">
-<ChevronLeft/>
-</button>
-<button className="size-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
-<button className="size-10 flex items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-slate-600 dark:text-slate-300">2</button>
-<button className="size-10 flex items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-slate-600 dark:text-slate-300">3</button>
-<button className="size-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-600 dark:text-slate-300">
-<ChevronRightIcon/>
-</button>
-</div>
+
 </main>
 <footer className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 p-8 text-center">
 <div className="flex justify-center gap-6 mb-6">
