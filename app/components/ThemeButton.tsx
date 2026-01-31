@@ -6,6 +6,6 @@ export default function ThemeButton(){
               document.documentElement.classList.toggle("dark");
             }}
 className="p-2 text-slate-600 dark:text-slate-300">
-<Lightbulb/>
+<span title="dark mode"><Lightbulb/></span>
 </button>)
 }

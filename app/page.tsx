@@ -20,7 +20,7 @@ export default async function Home() {
 <p className="text-xs text-primary font-medium">Verified Vendor</p>
 </div>
 <div className="flex items-center gap-2">
-<ThemeButton/>
+<ThemeButton  />
 <button className="p-2 text-slate-600 dark:text-slate-300">
 <ShoppingBag/>
 </button>
