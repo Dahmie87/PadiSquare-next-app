@@ -1,5 +1,6 @@
 import Link from "next/link";
 import QuantitySelector from "@/app/components/Quantity";
+import { Vendor } from "@/types/vendor";
 import { ChevronDown, ChevronLeft, Search, ShoppingBasket, ShoppingCart, Star } from "lucide-react";
 
 export default async function ProductDetailsPage({params}:{params:{id:string}}){
@@ -9,7 +10,8 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
     ? `https://${process.env.VERCEL_URL}` 
     : 'http://localhost:3000';
     
-  const vendor:any = await fetch(`${baseUrl}/api/vendors/1/`)
+    const res = await fetch(`${baseUrl}/api/vendors/1/`)
+    const vendor=await res.json() as Vendor
     const product = vendor.products[product_id]
 
     const PRODUCT_IMG_DICT: {[key:number]:string} = {
