@@ -30,18 +30,7 @@ const PRODUCTS_PER_PAGE = 4
 console.log(paginatedProducts[0].id)
   return (
     <div>
-      div className="flex items-center gap-4 bg-white dark:bg-gray-900 px-4 py-3 border-b border-gray-100 dark:border-gray-800 sticky top-[109px] z-40">
-<p className="text-slate-500 dark:text-slate-400 text-sm font-medium flex-1">{Object.keys(vendor.products).length} products</p>
-<div className="shrink-0">
-<select className="flex items-center gap-1 cursor-pointer rounded-lg h-9 px-3 bg-gray-100 dark:bg-gray-800 text-slate-700 dark:text-slate-200 text-xs font-semibold">
-  <option value="newest">Newest First</option>
-  <option value="oldest">Oldest First</option>
-  <option value="popular">Most Popular</option>
-</select>
-</div>
-<button className="flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg size-9">
-<Filter className="w-5"/>
-</button>
+      
       <div className="grid grid-cols-2 gap-10 p-8">
   {paginatedProducts.map((product)=>(<Link key={product.id} href={`/products/${product.id}`}><ProductCard prods={product}/>
 </Link>))}
