@@ -2,7 +2,7 @@ import ThemeButton from "./components/ThemeButton";
 import ProductGrid from "./components/ProductGrid";
 import LogoCard from "./components/Logo";
 import { vendors } from "@/lib/data";
-import {  ArrowDownUp, Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
+import { Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
 
 export default async function Home() {
  
