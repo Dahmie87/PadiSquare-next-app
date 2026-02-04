@@ -62,7 +62,7 @@ export default function QuantitySelector({
           onChange={handleInputChange}
           min={min}
           max={max}
-          className="w-20 h-10 text-center text-lg font-bold border-2 border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-primary focus:outline-none"
+          className="w-20 h-10 text-center text-sm font-bold border-2 border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-primary focus:outline-none"
         />
         
         <button
@@ -71,7 +71,7 @@ export default function QuantitySelector({
           className="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl font-bold hover:bg-primary/90 transition-colors disabled:opacity-40 disabled:cursor-not-allowed active:scale-95"
           aria-label="Increase quantity"
         >
-          <Plus className="w-5 h-5" />
+          <Plus className="w-4 h-4" />
         </button>
       </div>
     </div>
