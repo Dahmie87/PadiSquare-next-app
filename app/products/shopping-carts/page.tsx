@@ -1,13 +1,13 @@
 import { ChevronLeft, XIcon, Minus, MoreHorizontal, Plus, Tag, ArrowBigRight } from 'lucide-react'
 import React from 'react'
-
+import Link from 'next/link'
 const CartPage = () => {
   return (
     <div><div className="bg-background-light dark:bg-background-dark font-display text-[#0e1b13] dark:text-white antialiased">
 <header className="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
 <div className="flex items-center p-4 justify-between max-w-xl mx-auto">
-<div className="flex items-center gap-4">
-<ChevronLeft/><h2 className="text-lg font-bold leading-tight tracking-tight">Your Cart (3 items)</h2>
+<div className="flex items-center gap-4"><Link href={'/'}><ChevronLeft/></Link>
+<h2 className="text-lg font-bold leading-tight tracking-tight">Your Cart (3 items)</h2>
 </div>
 <div className="flex items-center gap-3">
 <MoreHorizontal/></div>
