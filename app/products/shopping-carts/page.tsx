@@ -2,7 +2,7 @@ import React from 'react'
 
 const CartPage = () => {
   return (
-    <div><body className="bg-background-light dark:bg-background-dark font-display text-[#0e1b13] dark:text-white antialiased">
+    <div><div className="bg-background-light dark:bg-background-dark font-display text-[#0e1b13] dark:text-white antialiased">
 <header className="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
 <div className="flex items-center p-4 justify-between max-w-xl mx-auto">
 <div className="flex items-center gap-4">
@@ -137,7 +137,7 @@ const CartPage = () => {
 </div>
 </div>
 
-</body></div>
+</div></div>
   )
 }
 
