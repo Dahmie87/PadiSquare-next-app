@@ -1,3 +1,4 @@
+import { ChevronLeft } from 'lucide-react'
 import React from 'react'
 
 const CartPage = () => {
@@ -6,8 +7,7 @@ const CartPage = () => {
 <header className="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
 <div className="flex items-center p-4 justify-between max-w-xl mx-auto">
 <div className="flex items-center gap-4">
-<span className="material-symbols-outlined cursor-pointer text-gray-900 dark:text-white">arrow_back_ios</span>
-<h2 className="text-lg font-bold leading-tight tracking-tight">Your Cart (3 items)</h2>
+<ChevronLeft/><h2 className="text-lg font-bold leading-tight tracking-tight">Your Cart (3 items)</h2>
 </div>
 <div className="flex items-center gap-3">
 <span className="material-symbols-outlined cursor-pointer text-gray-900 dark:text-white">more_horiz</span>
