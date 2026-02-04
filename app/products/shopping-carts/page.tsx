@@ -1,4 +1,4 @@
-import { ChevronLeft } from 'lucide-react'
+import { ChevronLeft, MoreHorizontal } from 'lucide-react'
 import React from 'react'
 
 const CartPage = () => {
@@ -10,8 +10,7 @@ const CartPage = () => {
 <ChevronLeft/><h2 className="text-lg font-bold leading-tight tracking-tight">Your Cart (3 items)</h2>
 </div>
 <div className="flex items-center gap-3">
-<span className="material-symbols-outlined cursor-pointer text-gray-900 dark:text-white">more_horiz</span>
-</div>
+<MoreHorizontal/></div>
 </div>
 </header>
 <main className="max-w-xl mx-auto pb-64">
