@@ -94,7 +94,7 @@ const CartPage = () => {
 <div className="px-4 mt-6">
 <div className="bg-primary/5 rounded-2xl p-4 border border-primary/10 flex items-center justify-between">
 <div className="flex items-center gap-3">
-<Tag/><div>
+<Tag className=''/><div>
 <p className="font-bold text-sm">Promo Code</p>
 <p className="text-xs text-gray-500">Apply a discount code</p>
 </div>
