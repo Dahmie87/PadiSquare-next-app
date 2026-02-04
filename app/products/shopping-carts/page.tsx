@@ -1,4 +1,4 @@
-import { ChevronLeft, MoreHorizontal } from 'lucide-react'
+import { ChevronLeft, Minus, MoreHorizontal } from 'lucide-react'
 import React from 'react'
 
 const CartPage = () => {
@@ -33,8 +33,7 @@ const CartPage = () => {
 <span className="text-lg font-bold text-primary">$89.00</span>
 <div className="flex items-center bg-gray-50 dark:bg-gray-800 rounded-lg p-1">
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
-<span className="material-symbols-outlined text-lg">remove</span>
-</button>
+<Minus/></button>
 <span className="w-8 text-center font-bold text-sm">1</span>
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
 <span className="material-symbols-outlined text-lg">add</span>
@@ -61,8 +60,7 @@ const CartPage = () => {
 <span className="text-lg font-bold text-primary">$145.00</span>
 <div className="flex items-center bg-gray-50 dark:bg-gray-800 rounded-lg p-1">
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
-<span className="material-symbols-outlined text-lg">remove</span>
-</button>
+<Minus/></button>
 <span className="w-8 text-center font-bold text-sm">1</span>
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
 <span className="material-symbols-outlined text-lg">add</span>
@@ -89,8 +87,7 @@ const CartPage = () => {
 <span className="text-lg font-bold text-primary">$32.00</span>
 <div className="flex items-center bg-gray-50 dark:bg-gray-800 rounded-lg p-1">
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
-<span className="material-symbols-outlined text-lg">remove</span>
-</button>
+<Minus/></button>
 <span className="w-8 text-center font-bold text-sm">1</span>
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
 <span className="material-symbols-outlined text-lg">add</span>
