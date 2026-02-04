@@ -1,4 +1,4 @@
-import { ChevronLeft, Minus, MoreHorizontal, Plus } from 'lucide-react'
+import { ChevronLeft, XIcon, Minus, MoreHorizontal, Plus } from 'lucide-react'
 import React from 'react'
 
 const CartPage = () => {
@@ -24,8 +24,7 @@ const CartPage = () => {
 <div className="flex justify-between items-start">
 <h3 className="font-bold text-base leading-tight">Sustainable Fleece Hoodie</h3>
 <button className="text-gray-400 hover:text-red-500 transition-colors">
-<span className="material-symbols-outlined text-xl">close</span>
-</button>
+<XIcon/></button>
 </div>
 <p className="text-gray-500 text-xs mt-1 uppercase tracking-wider font-medium">Size: M • Color: Forest Green</p>
 </div>
@@ -50,8 +49,7 @@ const CartPage = () => {
 <div className="flex justify-between items-start">
 <h3 className="font-bold text-base leading-tight">Eco Puffer Jacket</h3>
 <button className="text-gray-400 hover:text-red-500 transition-colors">
-<span className="material-symbols-outlined text-xl">close</span>
-</button>
+<XIcon/></button>
 </div>
 <p className="text-gray-500 text-xs mt-1 uppercase tracking-wider font-medium">Size: L • Color: Midnight</p>
 </div>
@@ -76,8 +74,7 @@ const CartPage = () => {
 <div className="flex justify-between items-start">
 <h3 className="font-bold text-base leading-tight">Basic Tee</h3>
 <button className="text-gray-400 hover:text-red-500 transition-colors">
-<span className="material-symbols-outlined text-xl">close</span>
-</button>
+<XIcon/></button>
 </div>
 <p className="text-gray-500 text-xs mt-1 uppercase tracking-wider font-medium">Size: M • Color: White</p>
 </div>
