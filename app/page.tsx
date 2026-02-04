@@ -2,6 +2,7 @@ import ThemeButton from "./components/ThemeButton";
 import ProductGrid from "./components/ProductGrid";
 import LogoCard from "./components/Logo";
 import { vendors } from "@/lib/data";
+import Link from "next/link";
 import { Facebook, Filter,  Instagram,  Mail, Search, ShoppingBag} from "lucide-react";
 
 export default async function Home() {
@@ -26,8 +27,8 @@ export default async function Home() {
 <div className="flex items-center gap-2">
 <ThemeButton  />
 <button title="shopping cartsd" className="p-2 text-slate-600 dark:text-slate-300">
-  <link href="/products/shopping-carts">
-<ShoppingBag/></link>
+  <Link href="/products/shopping-carts">
+<ShoppingBag/></Link>
 </button>
 </div>
 </div>
