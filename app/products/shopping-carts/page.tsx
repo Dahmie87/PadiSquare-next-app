@@ -1,4 +1,4 @@
-import { ChevronLeft, Minus, MoreHorizontal } from 'lucide-react'
+import { ChevronLeft, Minus, MoreHorizontal, Plus } from 'lucide-react'
 import React from 'react'
 
 const CartPage = () => {
@@ -36,8 +36,7 @@ const CartPage = () => {
 <Minus/></button>
 <span className="w-8 text-center font-bold text-sm">1</span>
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
-<span className="material-symbols-outlined text-lg">add</span>
-</button>
+<Plus/></button>
 </div>
 </div>
 </div>
@@ -63,8 +62,7 @@ const CartPage = () => {
 <Minus/></button>
 <span className="w-8 text-center font-bold text-sm">1</span>
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
-<span className="material-symbols-outlined text-lg">add</span>
-</button>
+<Plus/></button>
 </div>
 </div>
 </div>
@@ -90,8 +88,7 @@ const CartPage = () => {
 <Minus/></button>
 <span className="w-8 text-center font-bold text-sm">1</span>
 <button className="w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400">
-<span className="material-symbols-outlined text-lg">add</span>
-</button>
+<Plus/></button>
 </div>
 </div>
 </div>
