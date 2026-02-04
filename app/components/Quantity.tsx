@@ -53,7 +53,7 @@ export default function QuantitySelector({
           className="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl font-bold hover:bg-primary/90 transition-colors disabled:opacity-40 disabled:cursor-not-allowed active:scale-95"
           aria-label="Decrease quantity"
         >
-          <Minus className="w-5 h-5" />
+          <Minus className="w-4 h-4" />
         </button>
         
         <input
