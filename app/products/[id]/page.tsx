@@ -35,7 +35,8 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
 <div className="flex items-center gap-3">
 <Search/>
 <div className="relative">
-<ShoppingBasket/>
+    <Link href={'/products/shopping-carts'}>
+<ShoppingBasket/></Link>
 <span className="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">3</span>
 </div>
 </div>
