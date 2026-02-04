@@ -1,4 +1,4 @@
-import { ChevronLeft, XIcon, Minus, MoreHorizontal, Plus, Tag } from 'lucide-react'
+import { ChevronLeft, XIcon, Minus, MoreHorizontal, Plus, Tag, ArrowBigRight } from 'lucide-react'
 import React from 'react'
 
 const CartPage = () => {
@@ -121,7 +121,7 @@ const CartPage = () => {
 </div>
 <button className="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
             Proceed to Checkout
-            <span className="material-symbols-outlined text-lg">arrow_forward</span>
+<ArrowBigRight/>
 </button>
 </div>
 </div>
