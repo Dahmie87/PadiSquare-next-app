@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { CheckCircle, ChevronLeft } from 'lucide-react'
+import { CheckCircle, ChevronLeft, Plus } from 'lucide-react'
 import React from 'react'
 
 const CheckOut = () => {
@@ -105,8 +105,7 @@ const CheckOut = () => {
 <div className="w-6 h-6 rounded-full border border-gray-200 dark:border-gray-700"></div>
 </div>
 <button className="w-full py-4 flex items-center justify-center gap-2 text-primary font-bold text-sm border-2 border-dashed border-primary/20 rounded-2xl hover:bg-primary/5 transition-colors">
-<span className="material-symbols-outlined text-lg">add</span>
-                Add New Card
+<Plus/>                Add New Card
             </button>
 </div>
 </section>
