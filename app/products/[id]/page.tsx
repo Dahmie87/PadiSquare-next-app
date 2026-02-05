@@ -155,9 +155,10 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
 <ShoppingCart/>
                 Add to Cart
             </button>
+            <Link href={'/checkout'}>
 <button className="flex-[1.5] bg-primary text-white font-bold py-3.5 rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 transition-colors">
                 Buy Now
-            </button>
+            </button></Link>
 </div>
 </div>
 </div>)
