@@ -1,13 +1,13 @@
-import { ChevronLeft } from 'lucide-react'
+import { CheckCircle, ChevronLeft } from 'lucide-react'
 import React from 'react'
 
 const CheckOut = () => {
   return (
-    <div><body className="bg-background-light dark:bg-background-dark font-display text-[#0e1b13] dark:text-white antialiased">
+    <div><div className="bg-background-light dark:bg-background-dark font-display text-[#0e1b13] dark:text-white antialiased">
 <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
 <div className="flex items-center p-4 justify-between max-w-xl mx-auto">
 <div className="flex items-center gap-4">
-<span className="material-symbols-outlined cursor-pointer">arrow_back_ios</span>
+<ChevronLeft/>
 <h2 className="text-lg font-bold leading-tight tracking-tight text-center flex-1">Checkout</h2>
 </div>
 <div className="w-6"></div> 
@@ -87,7 +87,7 @@ const CheckOut = () => {
 <p className="text-[10px] text-gray-500 font-medium">Expires 12/25</p>
 </div>
 </div>
-<span className="material-symbols-outlined text-primary filled-icon">check_circle</span>
+<CheckCircle className=" text-primary filled-icon"/>
 </div>
 <div className="p-4 bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl flex items-center justify-between">
 <div className="flex items-center gap-4 opacity-70">
@@ -144,7 +144,7 @@ const CheckOut = () => {
 </div>
 </div>
 
-</body></div>
+</div></div>
   )
 }
 
