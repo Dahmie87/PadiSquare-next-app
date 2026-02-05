@@ -1,3 +1,4 @@
+import { ChevronLeft } from 'lucide-react'
 import React from 'react'
 
 const CheckOut = () => {
@@ -135,7 +136,7 @@ const CheckOut = () => {
 <div className="max-w-xl mx-auto">
 <button className="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all flex items-center justify-center gap-3">
             Place Order • $101.12
-            <span className="material-symbols-outlined text-xl">arrow_forward</span>
+<ChevronLeft/>
 </button>
 <p className="text-[10px] text-center text-gray-400 mt-3 px-4">
             By placing your order, you agree to our <span className="underline">Terms of Service</span> and <span className="underline">Privacy Policy</span>.
