@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { CheckCircle, ChevronLeft, Plus } from 'lucide-react'
+import { ArrowRight, CheckCircle, CheckCircleIcon, ChevronLeft, Plus } from 'lucide-react'
 import React from 'react'
 
 const CheckOut = () => {
@@ -90,7 +90,7 @@ const CheckOut = () => {
 <p className="text-[10px] text-gray-500 font-medium">Expires 12/25</p>
 </div>
 </div>
-<CheckCircle className=" text-primary filled-icon"/>
+<CheckCircleIcon className=" text-primary filled-icon"/>
 </div>
 <div className="p-4 bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl flex items-center justify-between">
 <div className="flex items-center gap-4 opacity-70">
@@ -138,7 +138,7 @@ const CheckOut = () => {
 <div className="max-w-xl mx-auto">
 <button className="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all flex items-center justify-center gap-3">
             Place Order • $101.12
-<ChevronLeft/>
+<ArrowRight/>
 </button>
 <p className="text-[10px] text-center text-gray-400 mt-3 px-4">
             By placing your order, you agree to our <span className="underline">Terms of Service</span> and <span className="underline">Privacy Policy</span>.
