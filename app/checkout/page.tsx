@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { CheckCircle, ChevronLeft } from 'lucide-react'
 import React from 'react'
 
@@ -7,7 +8,9 @@ const CheckOut = () => {
 <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
 <div className="flex items-center p-4 justify-between max-w-xl mx-auto">
 <div className="flex items-center gap-4">
+<Link href={'/'}>
 <ChevronLeft/>
+</Link>
 <h2 className="text-lg font-bold leading-tight tracking-tight text-center flex-1">Checkout</h2>
 </div>
 <div className="w-6"></div> 
