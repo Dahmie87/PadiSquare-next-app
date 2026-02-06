@@ -49,6 +49,7 @@ function ProductGrid({products}: {products: Record<string, Prods>}) {
         return productsArr
     }
   }, [products, sortBy])
+  console.log(sortedProducts)
 
   const totalPages = Math.ceil(sortedProducts.length / PRODUCTS_PER_PAGE)
   const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE
