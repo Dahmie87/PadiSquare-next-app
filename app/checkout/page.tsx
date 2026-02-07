@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, CheckCircle, CheckCircleIcon, ChevronLeft, Plus } from 'lucide-react'
+import { ArrowRight, CheckCircleIcon, ChevronLeft, Plus } from 'lucide-react'
 import React from 'react'
 
 const CheckOut = () => {
@@ -90,7 +90,7 @@ const CheckOut = () => {
 <p className="text-[10px] text-gray-500 font-medium">Expires 12/25</p>
 </div>
 </div>
-<CheckCircleIcon className=" text-primary filled-icon"/>
+<CheckCircleIcon className=" text-primary filled-icon "/>
 </div>
 <div className="p-4 bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl flex items-center justify-between">
 <div className="flex items-center gap-4 opacity-70">
