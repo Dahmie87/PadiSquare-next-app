@@ -12,55 +12,43 @@ type Prods = {
     category: string
     name: string
     price: string
-    createdAt?: string  // Add these if they exist in your data
+    createdAt?: string
     sales?: number
 }
 
 function ProductGrid({products}: {products: Record<string, Prods>}) {
   const [currentPage, setCurrentPage] = useState(1)
-  const [sortBy, setSortBy] = useState('newest')
+  const [sortBy, setSortBy] = useState('default')
   
   const PRODUCTS_PER_PAGE = 4
 
-  // Sort products
+  // Sort products - FIXED
   const sortedProducts = useMemo(() => {
-    const productsArr = Object.values(products) as Prods[]
+    const arr = [...Object.values(products)] as Prods[]
     
-    switch(sortBy) {
-      case 'newest':
-        return [...productsArr].sort((a, b) => 
-          new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime()
-        )
-      case 'oldest':
-        return [...productsArr].sort((a, b) => 
-          new Date(a.createdAt || 0).getTime() - new Date(b.createdAt || 0).getTime()
-        )
-      case 'popular':
-        return [...productsArr].sort((a, b) => (b.sales || 0) - (a.sales || 0))
-      case 'price-low':
-        return [...productsArr].sort((a, b) => 
-          parseFloat(a.price) - parseFloat(b.price)
-        )
-      case 'price-high':
-        return [...productsArr].sort((a, b) => 
-          parseFloat(b.price) - parseFloat(a.price)
-        )
-      default:
-        return productsArr
+    if (sortBy === 'price-low') {
+      return arr.sort((a, b) => {
+        const priceA = parseFloat(a.price.replace(/[^0-9.]/g, ''))
+        const priceB = parseFloat(b.price.replace(/[^0-9.]/g, ''))
+        return priceA - priceB
+      })
+    } else if (sortBy === 'price-high') {
+      return arr.sort((a, b) => {
+        const priceA = parseFloat(a.price.replace(/[^0-9.]/g, ''))
+        const priceB = parseFloat(b.price.replace(/[^0-9.]/g, ''))
+        return priceB - priceA
+      })
+    } else if (sortBy === 'name') {
+      return arr.sort((a, b) => a.name.localeCompare(b.name))
     }
+    
+    return arr
   }, [products, sortBy])
-  console.log(sortedProducts)
 
   const totalPages = Math.ceil(sortedProducts.length / PRODUCTS_PER_PAGE)
   const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE
   const endIndex = startIndex + PRODUCTS_PER_PAGE
   const paginatedProducts = sortedProducts.slice(startIndex, endIndex)
-
-  // Reset to page 1 when sort changes
-  const handleSortChange = (newSort: string) => {
-    setSortBy(newSort)
-    setCurrentPage(1)
-  }
 
   return (
     <div>
@@ -72,12 +60,14 @@ function ProductGrid({products}: {products: Record<string, Prods>}) {
         <div className="shrink-0">
           <select 
             value={sortBy}
-            onChange={(e) => handleSortChange(e.target.value)}
+            onChange={(e) => {
+              setSortBy(e.target.value)
+              setCurrentPage(1)
+            }}
             className="flex items-center gap-1 cursor-pointer rounded-lg h-9 px-3 bg-gray-100 dark:bg-gray-800 text-slate-700 dark:text-slate-200 text-xs font-semibold"
           >
-            <option value="newest">Newest First</option>
-            <option value="oldest">Oldest First</option>
-            <option value="popular">Most Popular</option>
+            <option value="default">Default</option>
+            <option value="name">Name A-Z</option>
             <option value="price-low">Price: Low to High</option>
             <option value="price-high">Price: High to Low</option>
           </select>
