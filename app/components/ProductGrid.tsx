@@ -78,7 +78,7 @@ function ProductGrid({products}: {products: Record<string, Prods>}) {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-2 gap-10 p-8">
+      <div className="grid md:grid-cols-3 lg:grid-cols-4  gap-10 p-8">
         {paginatedProducts.map((product) => (
           <Link key={product.id} href={`/products/${product.id}`}>
             <ProductCard prods={product}/>
