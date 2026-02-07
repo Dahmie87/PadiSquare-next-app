@@ -43,9 +43,7 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
 </div>
 </header>
 <main className="max-w-xl mx-auto pb-24">
-{/* <!-- Image Gallery Section --> */}
 <div className="px-4 py-3">
-{/* Use inline style for dynamic background image */}
 <div 
     className="flex flex-col justify-end overflow-hidden bg-gray-200 rounded-xl min-h-96 relative shadow-sm bg-cover bg-center"
     style={{ backgroundImage: `url(${productImage})` }}
@@ -120,8 +118,8 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
 {/* <!-- Related Products --> */}
 <div className="mt-8">
 <h3 className="px-4 text-lg font-bold mb-4">You may also like</h3>
-<div className="flex gap-4 overflow-x-auto px-4 pb-4 no-scrollbar">
-{/* <!-- Product Card 1 --> */}
+{/* <div className="flex gap-4 overflow-x-auto px-4 pb-4 no-scrollbar">
+
 <div className="w-40 shrink-0">
 <div className="h-48 rounded-xl bg-gray-100 dark:bg-gray-800 mb-2 overflow-hidden">
 <img className="w-full h-full object-cover" alt="Related product white tshirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg82tB41HAXzsv6rDo_r5xdzeQ2J2-mWminE70ExE57C4f35YuCzDFs0umfa1UUG2zkg4XdolhxcNcDxYT5nNcgZVfK2MLuSEkWR5Vs_pVmKLGs7gysXev0X3fV4cjme9jCBGmoDImInLUp_oKj_6t0Qkzi69DyG8c6E44KcJBC1w2Nc9PqAvQnNk-M_qnGloO_XxFCLvDeIVFHUSSjgekG3-qQEOWZvnJpCRVrhOK3PwsPHyllwZuohTqMuAqvnLpavOjHmTAd3Si"/>
@@ -129,7 +127,6 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
 <p className="font-bold text-sm truncate">Basic Tee</p>
 <p className="text-primary font-bold text-sm">$32.00</p>
 </div>
-{/* <!-- Product Card 2 --> */}
 <div className="w-40 shrink-0">
 <div className="h-48 rounded-xl bg-gray-100 dark:bg-gray-800 mb-2 overflow-hidden">
 <img className="w-full h-full object-cover" alt="Related product puffer jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiVkpFBRWv5Dg7Df2FD0K9h2ztvJwECVzUnn6fuGzvHRc3w-xKb1-KAXF-QihehoJ9D7AGptPDKM4ELWJLSWaxqiqAQYUqS7tEx4MZYIDExG_X-GGsKfYERahi8acGwCdrXT1HVsQFi0Pn_ZjXJ09V4ldzwkdliVZ9pFuXNQhJ-Uurg5UPMw2qAWKtEIwQusUQ8BPrkbj1WicjWQbpCh9xzVeQ_IWECksQrHRvvlh14v221fNFBOcrrU4NIwbtVlulDPhSrPWzJjnW"/>
@@ -137,7 +134,6 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
 <p className="font-bold text-sm truncate">Eco Puffer Jacket</p>
 <p className="text-primary font-bold text-sm">$145.00</p>
 </div>
-{/* <!-- Product Card 3 --> */}
 <div className="w-40 shrink-0">
 <div className="h-48 rounded-xl bg-gray-100 dark:bg-gray-800 mb-2 overflow-hidden">
 <img className="w-full h-full object-cover" alt="Related product sneakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL8rTxvts7FCzUA0ixOI7XXsaHyek22OqErvMlqoP27u28kH7AYOuv9EtaR5pGRhXrEKzH9PP9Qr4DRx014h-g3TINqfwiAdZyK8sW4jPZRY-niht7w2tE6hbni0jh3cbi3cwOgDzJ2Xf4rvhUlUyP-MIccNWGi4IIBJjmnoVWBqe6KhLwx-XrKFaPkTWc_4Nsr7cZ8CETwLuEn-flD0TXSa1gZHER_HpnYTy-rm-c506vime0KZ8b3is-xay5_sUvyLIrAIyIW5Kj"/>
@@ -145,7 +141,7 @@ export default async function ProductDetailsPage({params}:{params:{id:string}}){
 <p className="font-bold text-sm truncate">Recycled Sneakers</p>
 <p className="text-primary font-bold text-sm">$120.00</p>
 </div>
-</div>
+</div> */}
 </div>
 </main>
 {/* <!-- Sticky Bottom Actions --> */}
